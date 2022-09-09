@@ -255,10 +255,3 @@ roc(training_set$No.show,ifelse(X_pred > 0.2,1,0),plot = TRUE)
 
 #Test on the test dataset
 roc(test_set$No.show,ifelse(y_pred > 0.2,1,0),plot = TRUE)
-
-
-#If I were using this code in production I'd have included fewer versions
-#of the dataset for ease-of-use for my co-workers.
-#I decided to keep them in because I find it helpful for debugging as
-#I code, and this is a more honest representation of how I work.
-#I'd also have hewn more tightly to the R variable naming conventions.
